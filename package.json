@@ -1,0 +1,38 @@
+{
+  "name": "betta",
+  "version": "1.0.0",
+  "description": "a hybird app devolop tool",
+  "preferGlobal": "true",
+  "main": "bin/betta",
+  "bin": {
+    "betta": "bin/betta"
+  },
+  "scripts": {
+    "test": "none"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jarden-liu/betta.git"
+  },
+  "keywords": [
+    "betta"
+  ],
+  "author": "jarden-liu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jarden-liu/betta/issues"
+  },
+  "homepage": "https://github.com/jarden-liu/betta#readme",
+  "dependencies": {
+    "colors": "^1.1.2",
+    "express": "^4.14.0",
+    "filewatcher": "^3.0.0",
+    "fsmonitor": "^0.2.4",
+    "ip": "^1.1.3",
+    "livereload": "^0.4.1",
+    "moment": "^2.14.1",
+    "q": "^1.4.1",
+    "shelljs": "^0.7.0",
+    "yargs": "^4.7.1"
+  }
+}
