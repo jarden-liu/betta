@@ -86,7 +86,7 @@ function gulpStartup(config) {
     if (shell.which('gulp')) {
         if (config.gulpStartupTasks && config.gulpStartupTasks.length > 0) {
             var result = showGulpTasks(config.gulpStartupTasks);
-            shell.exec('gulp ' + result);
+            shell.exec('gulp ' + result,{async:true});
         } else {
             shell.exec('gulp');
         }
