@@ -8,6 +8,7 @@ moment.locale('cs');
 var express = require('express');
 var ip = require('ip');
 var livereload = require('livereload');
+var open = require("open");
 
 var livereloadTemplate = '<script>  document.write("<script src=\\"http://' + ip.address() + ':23333/livereload.js\\"></scr"); document.write("ipt>");</script>';
 
@@ -75,6 +76,7 @@ function createServer(staticFloder) {
     var server = app.listen(8081, function() {
         var port = server.address().port;
         d.resolve();
+        open('http://' + ip.address() + ':' + port);
         console.info(colors.green('Running dev server:') + ' http://' + ip.address() + ':' + port);
     });
     return d.promise;
