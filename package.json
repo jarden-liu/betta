@@ -1,6 +1,6 @@
 {
   "name": "betta",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "a hybird app devolop tool",
   "preferGlobal": "true",
   "main": "bin/betta",
@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/jarden-liu/betta#readme",
   "dependencies": {
+    "betta": "git+https://github.com/jarden-liu/betta.git",
     "colors": "^1.1.2",
     "express": "^4.14.0",
     "filewatcher": "^3.0.0",
